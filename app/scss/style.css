@@ -1,0 +1,154 @@
+.user-nav__num {
+  font-family: "Rubik-Regular";
+  font-weight: 400;
+}
+
+.menu__list-link {
+  font-family: "Rubik-Medium";
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Rubik-Regular";
+  font-weight: 400;
+  font-style: normal;
+  src: local("Rubik-Regular"), url("../fonts/Rubik-Regular.woff2") format("woff2"), url("../fonts/Rubik-Regular.woff") format("woff");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Rubik-Medium";
+  font-weight: 500;
+  font-style: normal;
+  src: local("Rubik-Medium"), url("../fonts/Rubik-Medium.woff2") format("woff2"), url("../fonts/Rubik-Medium.woff") format("woff");
+  font-display: swap;
+}
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+ul[class] {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.header {
+  padding: 50px 0;
+}
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 75px;
+  align-items: center;
+}
+
+.menu__list {
+  display: flex;
+}
+.menu__list-link {
+  color: #436372;
+  font-size: 15px;
+}
+.menu__list-item + .menu__list-item {
+  margin-left: 35px;
+}
+
+.user-nav {
+  display: flex;
+  justify-content: space-between;
+  min-width: 300px;
+}
+.user-nav__link {
+  position: relative;
+}
+.user-nav__link-3, .user-nav__link-1 {
+  margin-right: 25px;
+}
+.user-nav__num {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  background-color: #fff;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 10px;
+  top: -8px;
+  left: 11px;
+}
+.user-nav__link-4::before, .user-nav__link-1::before {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  z-index: -1;
+  top: -15px;
+  left: -15px;
+}
+.user-nav__link-2::before {
+  content: "";
+  position: absolute;
+  width: 180px;
+  height: 50px;
+  border-radius: 35%;
+  z-index: -1;
+  background-color: #fcd7b6;
+  top: -15px;
+  left: -40px;
+}
+.user-nav__link-1::before {
+  background-color: #edf1f4;
+}
+.user-nav__link-4::before {
+  background-color: #a3bbc8;
+}/*# sourceMappingURL=style.css.map */
