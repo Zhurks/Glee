@@ -5,4 +5,6 @@ $(function(){
     arrows: false,
   });
 
+  var mixer = mixitup('.week-products__items');
+
 });
