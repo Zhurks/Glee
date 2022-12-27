@@ -26,9 +26,51 @@ body {
     padding: 0 15px;
 }
 
-.title{
+.title {
     @extend %dmsans-700;
     font-size: 36px;
     line-height: 40px;
     color: #191919;
+}
+
+.top {
+    background-color: $default-blue-light;
+    padding: 30px 15px;
+    color: #222933;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+
+    &__title {
+        @extend %rubik-300;
+        font-size: 36px;
+        margin-bottom: 17px;
+    }
+}
+
+.breadcrumbs {
+    &__list {
+        display: flex;
+    }
+
+    &__item {
+        @extend %rubik-400;
+        font-size: 14px;
+        position: relative;
+    }
+
+    &__item+.breadcrumbs__item::before {
+        content: '/';
+        position: absolute;
+        left: -13px;
+    }
+
+    &__item+.breadcrumbs__item {
+        margin-left: 20px;
+    }
+
+    &__link {
+        color: #737980;
+    }
 }

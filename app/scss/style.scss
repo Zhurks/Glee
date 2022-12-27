@@ -5,7 +5,7 @@
 @import 'global';
 
 .header {
-    padding: 50px 0;
+    padding: 50px 15px;
 
     &__inner {
         display: flex;
@@ -484,6 +484,7 @@
     padding-top: 115px;
     margin-top: -170px;
     transform: translateY(34%);
+
     &__top {
         display: flex;
         justify-content: space-between;
@@ -604,13 +605,74 @@
     }
 }
 
+.login {
+    a{
+        // display: inline-block;
+        color: $blue-buttons;
+    }
+    &__container {
+        max-width: 480px;
+        margin: 0 auto;
+        padding: 115px 15px 120px;
+    }
 
+    &__form {
+        width: 100%;
+        @extend %rubik-400;
+        font-size: 14px;
+        line-height: 17px;
+        color: $blue-buttons;
+        display: flex;
+        flex-direction: column;
+    }
 
+    &__label {
+        display: block;
 
+    }
 
+    &__input {
+        display: block;
+        margin: 12px 0 25px;
+        width: 100%;
+        height: 60px;
+        border: 2px solid rgb(246, 246, 246);
+    }
+    &__button{
+        margin-top: 12px;
+        width: 100%;
+        padding: 20px 0;
+        background-color: $default-blue;
+        color: #fff;
+        border: none;
+        @extend %rubik-500;
+        font-size: 18px;
+        cursor: pointer;
+    }
+    &__help-block{
+        padding: 34px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 2px solid rgb(246, 246, 246);
+    }
+    &__registration{
+        margin: 30px auto 22px;
+    }
+    &__registration-link{
+        @extend %rubik-500;
+        font-size: 18px;
+        line-height: 20px;
+        color: $blue-title;
+        padding: 16px;
+        text-align: center;
+        border: 2px solid rgb(163, 187, 200);
+    }
+}
 
+  
 
-
+  
 
 
 
@@ -738,5 +800,6 @@
         padding-right: 0;
     }
 }
+
 
 @import 'media';
