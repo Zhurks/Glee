@@ -40,3 +40,11 @@ $blue-title: #243f4d;
     font-family: 'Poppins-Bold';
     font-weight: 700;
 }
+
+%checkbox-hidden {
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    position: absolute;
+}
