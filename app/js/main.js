@@ -23,6 +23,17 @@ $(function(){
     autoplaySpeed: 2000,
   });
 
+  $(".star").rateYo({
+    starWidth: "10px",
+    normalFill: "#d6d6d6",
+    ratedFill: "#ffcc00",
+    readOnly: true
+  });
+
+
+
+  
+
   var containerEl1 = document.querySelector('[data-ref="week-products"]');
   var containerEl2 = document.querySelector('[data-ref="new-design"]');
  
