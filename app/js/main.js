@@ -1,4 +1,17 @@
 $(function(){
+
+  $('.product__filter-btn').on('click', function () {
+    $('.product__filter-btn').removeClass('product__filter-btn--active');
+    $(this).addClass('product__filter-btn--active');
+  });
+
+  $('.product__filter-btn--list').on('click', function () {
+    $('.product__item').addClass('product__item--list');
+  });
+  
+  $('.product__filter-btn--grid').on('click', function () {
+    $('.product__item').removeClass('product__item--list');
+  });
    
   $('.filter-price__input').ionRangeSlider({
     type: "double",
@@ -27,14 +40,22 @@ $(function(){
     starWidth: "10px",
     normalFill: "#d6d6d6",
     ratedFill: "#ffcc00",
-    readOnly: true
+    readOnly: true,
+  });
+
+  $(".product__star").rateYo({
+    starWidth: "17px",
+    normalFill: "#d6d6d6",
+    ratedFill: "#ffcc00",
+    readOnly: true,
+    spacing: "12px",
   });
 
 
 
   
 
-  var containerEl1 = document.querySelector('[data-ref="week-products"]');
+  var containerEl1 = document.querySelector('[data-ref="goods"]');
   var containerEl2 = document.querySelector('[data-ref="new-design"]');
  
   var config = {
