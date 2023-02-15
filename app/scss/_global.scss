@@ -75,3 +75,28 @@ body {
         color: #737980;
     }
 }
+
+.pagination{
+    padding: 35px 0;
+    display: flex;
+    &__link{
+    @extend %rubik-400;
+    color: $blue-title;
+    padding: 15px 18px;
+    border: 1px solid $default-blue;
+    margin-right: 15px;
+    &:hover{
+        background-color: $default-blue;
+        color: #fff;
+    }
+}
+&__list{
+    display: flex;
+}
+&__item--active{
+    background-color: $default-blue;
+color: #fff;
+}
+}
+
+  

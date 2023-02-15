@@ -871,7 +871,6 @@
         border: none;
         cursor: pointer;
         padding: 13px;
-        border-radius: 50%;
 
         &--active {
             background-color: $default-blue-light;
@@ -903,7 +902,8 @@
                   
             }
             .goods__img{
-                height: 210px;
+                max-width: 350px;
+                max-height: 480px;
             }
             .goods__content-box{
                 @extend %rubik-400;
